@@ -1,0 +1,2 @@
+stack_options(purge: true)
+mod "eks", source: "terraform-aws-modules/eks/aws", stacks: :all

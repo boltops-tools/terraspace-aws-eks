@@ -1,0 +1,7 @@
+---
+eks:
+  source: terraform-aws-modules/eks/aws
+  stacks: :all
+  type: registry
+  url: https://github.com/terraform-aws-modules/terraform-aws-eks
+  sha: bceb966dfd6f763ad8ea58764e8e84922848eca4
