@@ -123,7 +123,7 @@ module "vpc" {
 }
 
 module "eks" {
-  source = "../../modules/eks"
+  source = "../../modules/eks" # updated by terraspace
   cluster_name    = local.cluster_name
   cluster_version = "1.17"
   subnets         = module.vpc.private_subnets

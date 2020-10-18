@@ -52,7 +52,6 @@ To update the modules to the latest version from the Terraform registry.
 ## More Examples
 
     $ terraspace list
-    app/stacks/README.md
     app/stacks/basic
     app/stacks/create_false
     app/stacks/irsa

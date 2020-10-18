@@ -21,7 +21,7 @@ provider "kubernetes" {
 }
 
 module "eks" {
-  source = "../../modules/eks"
+  source = "../../modules/eks" # updated by terraspace
   create_eks      = false
   cluster_version = ""
 

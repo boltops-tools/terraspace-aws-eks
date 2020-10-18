@@ -63,7 +63,7 @@ module "vpc" {
 }
 
 module "eks" {
-  source = "../../modules/eks"
+  source = "../../modules/eks" # updated by terraspace
   cluster_name    = local.cluster_name
   cluster_version = "1.17"
   subnets         = module.vpc.public_subnets
@@ -74,8 +74,8 @@ module "eks" {
       name                    = "spot-1"
       override_instance_types = ["m5.large", "m5a.large", "m5d.large", "m5ad.large"]
       spot_instance_pools     = 4
-      asg_max_size            = 2
-      asg_desired_capacity    = 1
+      asg_max_size            = 5
+      asg_desired_capacity    = 5
       kubelet_extra_args      = "--node-labels=node.kubernetes.io/lifecycle=spot"
       public_ip               = true
     },
